@@ -13,4 +13,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/product/get', [DashboardController::class, 'index'])->name('product.get');
+Route::post('/product/creat', [DashboardController::class, 'index'])->name('product.create');
